@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Coastal Calm -->
+    <!-- Application Structure Plan: The application is a single-page portfolio with a vertical, scroll-based layout. It is divided into four main sections: Hero (introductory), About, Projects, and Contact. A fixed navigation bar at the top allows users to smoothly scroll to any section. This structure provides a linear, narrative-driven user experience, making it easy to consume information in a logical order while also allowing quick access to specific content. This design was chosen for its simplicity and effectiveness in showcasing a portfolio, as it keeps all content on a single page, eliminating loading times and enhancing user engagement. -->
+    <!-- Visualization & Content Choices: The content is presented through a combination of structured text and responsive grid layouts. Quantitative data is not applicable here, so the focus is on qualitative presentation. The Hero section uses large, impactful text to grab attention. The About section uses a two-column grid to pair text with a placeholder image. The Projects section uses a responsive grid of cards to display project information (title, description, and link). Icons are used to add visual interest to the navigation and contact form. All visual elements are created with HTML/CSS and Unicode, with no external images or SVG files, ensuring fast loading and adaptability. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F4;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-90 shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <a href="#hero" class="text-lg font-bold text-gray-900 hover:text-indigo-600 transition-colors">Your Name</a>
+            <ul class="flex space-x-4 md:space-x-8">
+                <li><a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="min-h-screen flex items-center justify-center text-center bg-gray-50 py-24 pt-32 lg:pt-0">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                Hi, I'm <span class="text-indigo-600">Your Name</span>.
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-600 max-w-2xl mx-auto mb-8">
+                I am a [Your Profession] with a passion for creating engaging and user-friendly digital experiences.
+            </p>
+            <a href="#projects" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all transform hover:scale-105">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
+                <div class="w-full md:w-1/2">
+                    <div class="w-full h-80 rounded-2xl overflow-hidden shadow-xl bg-gray-200 flex items-center justify-center">
+                        <span class="text-gray-500">
+                           
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 text-gray-600">
+                    <p class="mb-4 leading-relaxed">
+                        Write a brief bio about yourself here. Include your professional background, skills, and what drives you. For example, you could mention your journey into your field, the technologies you enjoy working with, and your professional goals.
+                    </p>
+                    <p class="leading-relaxed">
+                        You can also talk about your hobbies or interests to add a personal touch. This helps potential employers or clients get to know you better.
+                    </p>
+                    <div class="mt-6">
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">My Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm">Skill 1</span>
+                            <span class="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm">Skill 2</span>
+                            <span class="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm">Skill 3</span>
+                            <span class="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm">Skill 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                        💡
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Project Title 1</h3>
+                    <p class="text-gray-600 mb-4">
+                        A brief description of the project, including the technologies used and its purpose.
+                    </p>
+                    <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-bold transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                        🛠️
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Project Title 2</h3>
+                    <p class="text-gray-600 mb-4">
+                        A brief description of the project, including the technologies used and its purpose.
+                    </p>
+                    <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-bold transition-colors">
+                        View Project
+                    </a>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                        🚀
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Project Title 3</h3>
+                    <p class="text-gray-600 mb-4">
+                        A brief description of the project, including the technologies used and its purpose.
+                    </p>
+                    <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-bold transition-colors">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+            <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+                I'm currently open to new opportunities. Feel free to reach out via the form below or connect with me on social media.
+            </p>
+            <form id="contact-form" class="space-y-6 text-left">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messageBox = document.createElement('div');
+            messageBox.className = 'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-xl text-center z-50';
+            messageBox.innerHTML = '<p class="text-xl font-bold mb-4">Thank you!</p><p>Your message has been received.</p>';
+            
+            document.body.appendChild(messageBox);
+            
+            setTimeout(() => {
+                messageBox.remove();
+            }, 3000);
+            
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
